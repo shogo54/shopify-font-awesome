@@ -31,27 +31,27 @@ Now you can use Font Awesome anywhere on your store. Take a look at these [examp
 
 Check out the official site: [http://fontawesome.io](http://fontawesome.io)
 
-### FAQ
+## FAQ
 
-## What if I want to use different version of Awesome Font?
+### What if I want to use different version of Awesome Font?
 
-Find a version of Font Awesome that you want to use in [here](https://github.com/FortAwesome/Font-Awesome/releases)
-Download the zip folder, extract them, and find "webfonts" folder. 
-Upload everything in that folder to your theme's assets folder.
-Go to "css" folder in your downloaded Font Awesome folder, and look for ```fontawesome.min.css``` or ```all.min.css```. Upload the file to your theme's assets folder as well. 
-Go to your theme's layout > theme.liquid. In your header, add the following lines. Replace YOUR_AWESOME_FONT_FILE_NAME to the file name matching the file you found. 
+- Find a version of Font Awesome that you want to use in [here](https://github.com/FortAwesome/Font-Awesome/releases)
+- Download the zip folder, extract them, and find "webfonts" folder. 
+- Upload everything in that folder to your theme's assets folder.
+- Go to "css" folder in your downloaded Font Awesome folder, and look for ```fontawesome.min.css``` or ```all.min.css```. Upload the file to your theme's assets folder as well. 
+- Go to your theme's layout > theme.liquid. In your header, add the following lines. Replace YOUR_AWESOME_FONT_FILE_NAME to the file name matching the file you found. 
 ```liquid
   <!-- Font-Awesome ================================================== -->
   {{ 'YOUR_AWESOME_FONT_FILE_NAME' | asset_url | stylesheet_tag }}
 ```
-That's all!
+- That's all!
 
-## My theme has an older version of Font Awesome but I want to upgrade it to a newer version. 
+### My theme has an older version of Font Awesome but I want to upgrade it to a newer version. 
 
-You need to remove the Font Awesome from your theme first. 
-Take a look at layout > theme.liquid, and search for ```.css``` or ```font-awesome```. If you find any, remember the name of the file and remove the lines that include it. 
-Then go to assets folder. Find any files that has file name starting with ```fa```, ```FontAwesome```, or ```fontawesome```. Get rid of them with the css file that you found in the theme.liqud.
-Now you are good to go. Go ahead and integrate whatever version of Font Awesome to your theme!
+- You need to remove the Font Awesome from your theme first. 
+- Take a look at layout > theme.liquid, and search for ```.css``` or ```font-awesome```. If you find any, remember the name of the file and remove the lines that include it. 
+- Then go to assets folder. Find any files that has file name starting with ```fa```, ```FontAwesome```, or ```fontawesome```. Get rid of them with the css file that you found in the theme.liqud.
+- Now you are good to go. Go ahead and integrate whatever version of Font Awesome to your theme!
 
 
 
